@@ -47,7 +47,7 @@ async def respond(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Call Claude's API with the prompt
     completion = anthropic.completions.create(
         model="claude-2.0",
-        max_tokens_to_sample=150,
+        max_tokens_to_sample=350,
         temperature=1,
         prompt=prompt,
     )
@@ -66,8 +66,8 @@ async def respond(update: Update, context: ContextTypes.DEFAULT_TYPE):
     glossary = glossary.split("</glossary>")[0] + "</b>"
 
     # get data between corrected_response tags
-    corrected_response = "<b>" + correction.split("<corrected_response>")[1]
-    corrected_response = corrected_response.split("</corrected_response>")[0] + "</b>"
+    corrected_response = correction.split("<corrected_response>")[1]
+    corrected_response = corrected_response.split("</corrected_response>")[0]
 
     # get data between summary tags
     summary = "<b>Teacher says:</b>" + response_text.split("<response>")[1]
