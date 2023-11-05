@@ -1,4 +1,4 @@
-# Anthropic Hack Language Learning Bot Project
+# Claude Linguist: Anthropic Hack Language Learning Bot Project
 
 # Setup
 ```
