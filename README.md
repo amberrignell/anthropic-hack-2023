@@ -1,9 +1,4 @@
 # Claude Linguist: Anthropic Hack Language Learning Bot Project
-
-## Team
-Amber Rignell, Mimi Reyburn, Louis Horrell.
-
-## About
 If we strive to learn a new language, the most important part is to have someone to practice converstation with, someone to correct you when you get things wrong and to teach you new words. Enter Claude.
 
 The goal is to create a Telegram bot that helps you learn a language by conversing with you in that language.
@@ -32,3 +27,5 @@ AUTH_TOKEN=<your telegram bot token>
 ANTHROPIC_API_KEY=<your anthropic api key>
 ```
 
+## Team
+Amber Rignell, Mimi Reyburn, Louis Horrell.
