@@ -14,11 +14,11 @@ Telegram facilitates using Claude as easily as you would message a friend. But i
 
 Rigorous prompt engineering structures Claude's response to highlight mistakes, teach new words and then include them the response.
 
-# Setup
+# Setup ( >3 minutes )
 ```
 python3 -m venv venv
 source venv/bin/activate
-pip install python-telegram-bot requests python-dotenv
+pip install python-telegram-bot requests python-dotenv anthropic
 ```
 
 You will need to create a `.env` file with the following contents:
@@ -27,5 +27,10 @@ AUTH_TOKEN=<your telegram bot token>
 ANTHROPIC_API_KEY=<your anthropic api key>
 ```
 
+See [here](https://core.telegram.org/bots/features#creating-a-new-bot) for creating a telegram bot and getting the token.
+
+```
+python src/main.py
+```
 ## Team
 Amber Rignell, Mimi Reyburn, Louis Horrell.
