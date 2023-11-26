@@ -14,7 +14,7 @@ Telegram facilitates using Claude as easily as you would message a friend. But i
 
 Rigorous prompt engineering structures Claude's response to highlight mistakes, teach new words and then include them the response.
 
-# Setup ( >3 minutes )
+# Setup ( <3 minutes )
 ```
 python3 -m venv venv
 source venv/bin/activate
